@@ -13,17 +13,16 @@ public newTodo: string;
   constructor(private todosDataService: TodosDataService) { }
 
   ngOnInit() {
-    // this.todos = ['Create first weekend app', 
-    //               'Integrate with firebase', 
-    //               'add authentication', 
-    //               'add styles', 
-    //               'deploy'];
-                  this.todos = this.todosDataService.getTodos();
-                  console.log(this.todos);
+                      this.todos = this.todosDataService.getTodos();
   }
   public addTodo(): void {
+    let newTodo = {
+      value:'',
+      isDone: false
+    }
     if(this.newTodo !=='') {
-      this.todos.push(this.newTodo);
+        newTodo.value = this.newTodo
+      this.todos.push(newTodo);
       this.newTodo='';
     }    
   }
