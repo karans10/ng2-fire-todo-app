@@ -11,8 +11,12 @@ import { AuthenticationService } from '../../services/authentication.service';
 export class LoginComponent implements OnInit {
 
   constructor(private authentication: AuthenticationService, private router: Router) { }
-
+  public isSignedIn: boolean; 
   ngOnInit() {
+    // hack fix for redirecting to todo-list
+    this.authentication.isSignedIn.subscribe((isSignedIn: boolean) => {
+      this.isSignedIn = isSignedIn;
+    })
   }
 
   private login() {
