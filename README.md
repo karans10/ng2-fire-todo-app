@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Weekend projects
 
-This project is part of weekend project series, where I will be adding something to my gthub account every week. It will be either a new substantial update to an existing project or a total new project.
+This project is part of weekend project series, where I will be adding something to my github account every week. It will be either a new substantial update to an existing project or a total new project.
