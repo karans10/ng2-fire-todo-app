@@ -25,3 +25,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Weekend projects
+
+This project is part of weekend project series, where I will be adding everything to my gthub account. It will be either a new substantial update to an existing project or a total new project.
